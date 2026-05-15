@@ -1,0 +1,10 @@
+The waveform analysis shows that the digital FIR filter operates correctly under synchronous clock conditions. 
+The input samples are applied sequentially as 01, 02, 03, 04, 05, and 06, while the output signal generates filtered values after a few clock cycles. 
+Initially, the output remains undefined (XXXX) because the filter registers do not yet contain previous samples required for computation.
+Once sufficient input samples are stored, valid filtered outputs such as 0014, 001E, and 0028 are generated.
+The waveform demonstrates proper clock synchronization, sample shifting, and sequential processing of input data. 
+The gradual change in output values confirms the smoothing behavior of the FIR filter, which is one of the key characteristics of digital filtering. 
+The filter successfully reduces abrupt changes in the input signal by averaging previous and current samples.
+The design also shows stable pipeline-like behavior, where each clock cycle processes new input data and updates the output accordingly.
+No glitches or unstable transitions are observed in the waveform, indicating reliable synchronous operation. 
+Overall, the simulation verifies correct FIR filter functionality, proper sample processing, stable output generation, and efficient synchronous digital signal processing behavior
