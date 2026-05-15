@@ -52,7 +52,7 @@ Overall, the waveform demonstrates proper FIR filter functionality and synchrono
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Simulation Results
 
-Operation				              	  Result
+Operation				              Result
 
 Input Sample Processing			     Successful
 Moving Average Filtering		      Verified
