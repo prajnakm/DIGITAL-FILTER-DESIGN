@@ -1,1 +1,73 @@
+SIMULATION REPORT
+FIR Digital Filter Design using Verilog HDL
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Objective
 
+To design and simulate a simple FIR (Finite Impulse Response) digital filter using Verilog HDL for performing digital signal filtering and sample averaging operations.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Software Used
+
+Xilinx Vivado
+Verilog HDL
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Operations Implemented
+
+Input Sample Processing
+Sample Shifting
+Moving Average Filtering
+Synchronous Data Processing
+Filtered Output Generation
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Input Values Used
+
+01
+02
+03
+04
+05
+06
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Simulation Procedure
+
+The FIR digital filter module was designed using Verilog HDL.
+A separate testbench was created to apply sequential input samples.
+Behavioral simulation was run in Xilinx Vivado.
+Waveforms were observed to verify correct filtering operation and output generation.
+
+=========================================================================================================================================================
+Waveform Analysis
+
+The waveform shows the operation of the FIR digital filter during different clock cycles.
+Initially, the output signal y[15:0] remains undefined (XXXX) because the filter registers do not yet contain previous input samples required for filtering operation.
+As the clock signal toggles, input samples such as 01, 02, 03, 04, 05, and 06 are applied sequentially to the filter. 
+The filter stores previous samples internally and performs moving average filtering to generate smooth output values.
+After sufficient input samples are received, valid output values such as 0014, 001E, and 0028 are generated. 
+The gradual change in output values confirms the smoothing behavior of the FIR filter. The waveform also verifies correct sample shifting, clock synchronization, and sequential processing of input data.
+Overall, the waveform demonstrates proper FIR filter functionality and synchronous digital signal processing operation.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Simulation Results
+
+Operation				              	  Result
+
+Input Sample Processing			     Successful
+Moving Average Filtering		      Verified
+Clock Synchronization			        Verified
+Filtered Output Generation		   Successful
+Sequential Sample Processing		 Successful
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Result
+
+The FIR digital filter was successfully designed and simulated using Verilog HDL. 
+The filter generated correct filtered outputs for different input samples during simulation.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Conclusion
+
+The project demonstrated the implementation of a simple FIR digital filter using Verilog HDL. 
+Simulation results verified correct filtering operation, sample shifting, output smoothing, and synchronous signal processing through waveform analysis.
