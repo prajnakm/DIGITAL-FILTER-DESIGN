@@ -56,8 +56,8 @@ Operation				              Result
 
 Input Sample Processing			     Successful
 Moving Average Filtering		      Verified
-Clock Synchronization			        Verified
-Filtered Output Generation		   Successful
+Clock Synchronization			      Verified
+Filtered Output Generation		     Successful
 Sequential Sample Processing		 Successful
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
